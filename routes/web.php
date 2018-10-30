@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('hello/{name}', function ($name) {
+Route::get('hello/{name?}',function($name='Everybody'){
     return 'Hello,'.$name;
 });
